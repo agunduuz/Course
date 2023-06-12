@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project Course" />
+    <meta name="keywords" content="Course" />
+    <meta name="author" content="Anıl Gündüz" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - Course</title>
+  </head>
+  <body>
+    <main class="container mt-3">
+      <h1 style="color: #ffc107">Course App</h1>
+      <hr />
+      <article class="row flex-column">
+        <section class="col-md-5 align-self-center">
+          <form id="new-course">
+            <div class="form-group mt-3">
+              <label for="title">Course Title</label>
+              <input type="text" class="form-control mt-2" id="title" />
+            </div>
+            <div class="form-group mt-3">
+              <label for="instructor">Instructor</label>
+              <input type="text" class="mt-2 form-control" id="instructor" />
+            </div>
+            <div class="form-group mt-3">
+              <label for="image">Image</label>
+              <input type="text" class="mt-2 form-control" id="image" />
+            </div>
+            <button type="submit" class="mt-4 w-100 btn btn-primary">
+              Save
+            </button>
+          </form>
+        </section>
+        <section class="col-md-7 align-self-center mt-4 w-100">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="bg-warning">
+                <th class="text-center">Image</th>
+                <th class="text-center">Title</th>
+                <th class="text-center">Instructor</th>
+                <th class="text-center"></th>
+              </tr>
+            </thead>
+            <tbody id="course-list"></tbody>
+          </table>
+        </section>
+      </article>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="appES6.js"></script>
+  </body>
+</html>
